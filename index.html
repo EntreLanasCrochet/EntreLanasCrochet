@@ -7,13 +7,12 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Fondo y tipografía */
     body {
       background: linear-gradient(135deg, #fbeff5, #f8d3e4);
       font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
     }
-
-    /* NAVBAR */
     .navbar {
       background-color: #f8d3e4;
     }
@@ -25,8 +24,6 @@
       font-weight: 600;
       color: #c75b7d !important;
     }
-
-    /* HERO SECTION */
     .hero {
       background: linear-gradient(135deg, #c75b7d, #f8d3e4);
       color: #fff;
@@ -37,47 +34,29 @@
     .hero h1 {
       font-size: 3rem;
       font-weight: bold;
-      margin-bottom: 1rem;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     }
-    .btn-hero {
-      background-color: #fff;
-      color: #c75b7d;
-      font-weight: bold;
-      border: none;
-      transition: background-color 0.3s ease;
-    }
-    .btn-hero:hover {
-      background-color: #fbeff5;
-    }
-
-    /* TÍTULO DE LA GALERÍA */
     .album-title {
       font-size: 2.5rem;
       font-weight: bold;
       color: #c75b7d;
       margin-bottom: 2rem;
     }
-
-    /* GALERÍA DE IMÁGENES */
     .photo-frame {
       border: 5px solid #e8c1d4;
       border-radius: 15px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
-    }
-    .photo-frame:hover {
-      transform: scale(1.05);
     }
     .photo-frame img {
       width: 250px;
       height: 250px;
       object-fit: cover;
       border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
-    /* FOOTER */
+    .photo-frame:hover {
+      transform: scale(1.05);
+    }
     footer {
       background-color: #fbeff5;
       text-align: center;
@@ -87,14 +66,13 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">ENTRE LANAS CROCHET</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon">&#9776;</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
@@ -103,52 +81,52 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
   <section class="hero">
     <div class="container">
       <h1>Bienvenido a ENTRE LANAS CROCHET</h1>
       <p>Descubre nuestras creaciones en crochet y manualidades únicas.</p>
-      <a href="#galeria" class="btn btn-hero btn-lg">Ver Galería</a>
+      <a href="#galeria" class="btn btn-light btn-lg">Ver Galería</a>
     </div>
   </section>
 
-  <!-- GALERÍA -->
   <section id="galeria" class="container py-5">
-    <div class="text-center">
-      <h2 class="album-title">Álbum de Fotos</h2>
-      <p>Nuestras últimas creaciones en crochet y manualidades.</p>
-    </div>
+    <h2 class="album-title text-center">Álbum de Fotos</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <!-- Repite este bloque para cada imagen -->
       <div class="col">
         <div class="photo-frame">
           <img src="./images/llaverito.jpg" alt="Llaverito Estrellita">
         </div>
         <h5 class="mt-2 text-center">Llaverito Estrellita Sonriente</h5>
         <div class="text-center mt-2">
-          <a href="https://wa.me/593979438903?text=Hola, estoy interesado en el Llaverito Estrellita." target="_blank" class="btn btn-success">Contáctanos</a>
+          <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Llaverito%20Estrellita." target="_blank" class="btn btn-success">Contáctanos</a>
         </div>
       </div>
-      <!-- Repite este bloque para cada imagen -->
+      <div class="col">
+        <div class="photo-frame">
+          <img src="./images/rosita_individual.jpg" alt="Tulipán de Amor">
+        </div>
+        <h5 class="mt-2 text-center">Tulipán de Amor</h5>
+        <div class="text-center mt-2">
+          <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Tulipán%20de%20Amor." target="_blank" class="btn btn-success">Contáctanos</a>
+        </div>
+      </div>
+      <!-- Añade más imágenes aquí -->
     </div>
   </section>
 
-  <!-- SECCIÓN DE CONTACTO -->
   <section id="contacto" class="container py-5">
-    <h2 class="text-center mb-4">Contáctanos</h2>
+    <h2 class="text-center">Contáctanos</h2>
     <p class="lead text-center">¿Tienes preguntas o quieres un producto personalizado? ¡Envíanos un mensaje por WhatsApp!</p>
     <div class="text-center">
       <a href="https://wa.me/593979438903" target="_blank" class="btn btn-success btn-lg">Enviar WhatsApp</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>&copy; 2023 ENTRE LANAS CROCHET - Todos los derechos reservados</p>
-    </div>
+    <p>&copy; 2023 ENTRE LANAS CROCHET - Todos los derechos reservados</p>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
