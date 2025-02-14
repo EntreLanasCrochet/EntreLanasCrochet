@@ -11,8 +11,6 @@
     body {
       background: linear-gradient(135deg, #fbeff5, #f8d3e4);
       font-family: 'Quicksand', sans-serif;
-      margin: 0;
-      padding: 0;
     }
 
     /* NAVBAR */
@@ -42,15 +40,11 @@
       margin-bottom: 1rem;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
     .btn-hero {
       background-color: #fff;
       color: #c75b7d;
-      border: none;
       font-weight: bold;
+      border: none;
       transition: background-color 0.3s ease;
     }
     .btn-hero:hover {
@@ -62,25 +56,25 @@
       font-size: 2.5rem;
       font-weight: bold;
       color: #c75b7d;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
       margin-bottom: 2rem;
     }
 
-    /* MARCOS DE LAS FOTOS */
+    /* GALERÍA DE IMÁGENES */
     .photo-frame {
       border: 5px solid #e8c1d4;
       border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
     .photo-frame:hover {
       transform: scale(1.05);
     }
     .photo-frame img {
-      width: 100%;
-      height: 100%;
+      width: 250px;
+      height: 250px;
       object-fit: cover;
+      border-radius: 10px;
     }
 
     /* FOOTER */
@@ -88,24 +82,7 @@
       background-color: #fbeff5;
       text-align: center;
       padding: 1rem 0;
-      margin-top: 2rem;
     }
-
-    <style>
-  /* Estilos adicionales para las imágenes de la galería */
-  .gallery img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover; /* Recorta la imagen para ajustarla al tamaño */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  .gallery img:hover {
-    transform: scale(1.05); /* Efecto de zoom suave al pasar el mouse */
-  }
-</style>
-
   </style>
 </head>
 <body>
@@ -114,19 +91,13 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">ENTRE LANAS CROCHET</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon">&#9776;</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#galeria">Galería</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -148,98 +119,32 @@
       <p>Nuestras últimas creaciones en crochet y manualidades.</p>
     </div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-      <!-- Imagen 1 -->
       <div class="col">
         <div class="photo-frame">
           <img src="./images/llaverito.jpg" alt="Llaverito Estrellita">
         </div>
         <h5 class="mt-2 text-center">Llaverito Estrellita Sonriente</h5>
         <div class="text-center mt-2">
-         <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Llaverito%20Estrellita.%20Puedes%20ver%20la%20foto%20aqu%C3%AD%3A%20https%3A%2F%2Fentrelanascrochet.github.io%2FEntreLanasCrochet%2Fimages%2Fllaverito.jpg" target="_blank" class="btn btn-success">Contáctanos</a>
-
+          <a href="https://wa.me/593979438903?text=Hola, estoy interesado en el Llaverito Estrellita." target="_blank" class="btn btn-success">Contáctanos</a>
         </div>
       </div>
-      <!-- Imagen 2 -->
-      <div class="col">
-        <div class="photo-frame">
-          <img src="./images/rosita_individual.jpg" alt="Imagen 2">
-        </div>
-        <h5 class="mt-2 text-center">Tulipán de Amor</h5>
-        <div class="text-center mt-2">
-         <!-- Código del botón de WhatsApp con el nuevo enlace -->
-<a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Llaverito%20Estrellita.%20Puedes%20ver%20la%20foto%20aqu%C3%AD%3A%20https%3A%2F%2Fentrelanascrochet.github.io%2FEntreLanasCrochet%2Fimages%2Fllaverito.jpg" target="_blank" class="btn btn-success">Contáctanos</a>
-
-        </div>
-      </div>
-      <!-- Imagen 3 -->
-      <div class="col">
-        <div class="photo-frame">
-          <img src="./images/conejito_ramo.jpg" alt="Imagen 3">
-        </div>
-        <h5 class="mt-2 text-center">Ramo Encantado</h5>
-        <div class="text-center mt-2">
-          <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Nombre%20de%20Imagen%203.%20Puedes%20ver%20la%20foto%20aqu%C3%AD%3A%20https%3A%2F%2Femersono53.github.io%2FEntre-Lanas-Crochet%2Fimages%2Fimagen3.jpg" target="_blank" class="btn btn-success">Contáctanos</a>
-        </div>
-      </div>
-      <!-- Imagen 4 -->
-      <div class="col">
-        <div class="photo-frame">
-          <img src="./images/abejita.jpg" alt="Imagen 4">
-        </div>
-        <h5 class="mt-2 text-center">Abejita Dulce</h5>
-        <div class="text-center mt-2">
-         <!-- Código del botón de WhatsApp con el nuevo enlace -->
-<a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Llaverito%20Estrellita.%20Puedes%20ver%20la%20foto%20aqu%C3%AD%3A%20https%3A%2F%2Fentrelanascrochet.github.io%2FEntreLanasCrochet%2Fimages%2Fllaverito.jpg" target="_blank" class="btn btn-success">Contáctanos</a>
-
-        </div>
-      </div>
-      <!-- Imagen 5 -->
-      <div class="col">
-        <div class="photo-frame">
-          <img src="./images/doraemon_llavero.jpg" alt="Imagen 5">
-        </div>
-        <h5 class="mt-2 text-center">Llavero Doraemon Handmade</h5>
-        <div class="text-center mt-2">
-         <!-- Código del botón de WhatsApp con el nuevo enlace -->
-<a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Llaverito%20Estrellita.%20Puedes%20ver%20la%20foto%20aqu%C3%AD%3A%20https%3A%2F%2Fentrelanascrochet.github.io%2FEntreLanasCrochet%2Fimages%2Fllaverito.jpg" target="_blank" class="btn btn-success">Contáctanos</a>
-
-        </div>
-      </div>
-      <!-- Imagen 6 -->
-      <div class="col">
-        <div class="photo-frame">
-          <img src="./images/imagen6.jpg" alt="Imagen 6">
-        </div>
-        <h5 class="mt-2 text-center">Nombre de Imagen 6</h5>
-        <div class="text-center mt-2">
-       <!-- Código del botón de WhatsApp con el nuevo enlace -->
-<a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Llaverito%20Estrellita.%20Puedes%20ver%20la%20foto%20aqu%C3%AD%3A%20https%3A%2F%2Fentrelanascrochet.github.io%2FEntreLanasCrochet%2Fimages%2Fllaverito.jpg" target="_blank" class="btn btn-success">Contáctanos</a>
-
-        </div>
-      </div>
+      <!-- Repite este bloque para cada imagen -->
     </div>
   </section>
 
   <!-- SECCIÓN DE CONTACTO -->
   <section id="contacto" class="container py-5">
     <h2 class="text-center mb-4">Contáctanos</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <p class="lead text-center">
-          ¿Tienes preguntas o quieres un producto personalizado?
-          ¡Envíanos un mensaje por WhatsApp y con gusto te ayudamos!
-        </p>
-        <div class="text-center">
-          <a href="https://wa.me/593979438903" target="_blank" class="btn btn-success btn-lg">Enviar WhatsApp</a>
-        </div>
-      </div>
+    <p class="lead text-center">¿Tienes preguntas o quieres un producto personalizado? ¡Envíanos un mensaje por WhatsApp!</p>
+    <div class="text-center">
+      <a href="https://wa.me/593979438903" target="_blank" class="btn btn-success btn-lg">Enviar WhatsApp</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p class="mb-0">&copy; 2023 ENTRE LANAS CROCHET - Todos los derechos reservados</p>
+      <p>&copy; 2023 ENTRE LANAS CROCHET - Todos los derechos reservados</p>
     </div>
   </footer>
 
