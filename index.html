@@ -10,8 +10,6 @@
     body {
       background: linear-gradient(135deg, #fbeff5, #f8d3e4);
       font-family: 'Quicksand', sans-serif;
-      margin: 0;
-      padding: 0;
     }
     .navbar {
       background-color: #f8d3e4;
@@ -42,17 +40,22 @@
       margin-bottom: 2rem;
     }
     .photo-frame {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border: 5px solid #e8c1d4;
       border-radius: 15px;
       overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-    .photo-frame img {
       width: 250px;
       height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+      background-color: #fff;
+    }
+    .photo-frame img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
     .photo-frame:hover {
       transform: scale(1.05);
@@ -92,7 +95,6 @@
   <section id="galeria" class="container py-5">
     <h2 class="album-title text-center">Álbum de Fotos</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-      <!-- Repite este bloque para cada imagen -->
       <div class="col">
         <div class="photo-frame">
           <img src="./images/llaverito.jpg" alt="Llaverito Estrellita">
@@ -100,6 +102,51 @@
         <h5 class="mt-2 text-center">Llaverito Estrellita Sonriente</h5>
         <div class="text-center mt-2">
           <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Llaverito%20Estrellita." target="_blank" class="btn btn-success">Contáctanos</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-frame">
+          <img src="./images/rosita_individual.jpg" alt="Tulipán de Amor">
+        </div>
+        <h5 class="mt-2 text-center">Tulipán de Amor</h5>
+        <div class="text-center mt-2">
+          <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Tulipán%20de%20Amor." target="_blank" class="btn btn-success">Contáctanos</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-frame">
+          <img src="./images/rosita_individual.jpg" alt="Tulipán de Amor">
+        </div>
+        <h5 class="mt-2 text-center">Tulipán de Amor</h5>
+        <div class="text-center mt-2">
+          <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Tulipán%20de%20Amor." target="_blank" class="btn btn-success">Contáctanos</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-frame">
+          <img src="./images/rosita_individual.jpg" alt="Tulipán de Amor">
+        </div>
+        <h5 class="mt-2 text-center">Tulipán de Amor</h5>
+        <div class="text-center mt-2">
+          <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Tulipán%20de%20Amor." target="_blank" class="btn btn-success">Contáctanos</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-frame">
+          <img src="./images/rosita_individual.jpg" alt="Tulipán de Amor">
+        </div>
+        <h5 class="mt-2 text-center">Tulipán de Amor</h5>
+        <div class="text-center mt-2">
+          <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Tulipán%20de%20Amor." target="_blank" class="btn btn-success">Contáctanos</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="photo-frame">
+          <img src="./images/rosita_individual.jpg" alt="Tulipán de Amor">
+        </div>
+        <h5 class="mt-2 text-center">Tulipán de Amor</h5>
+        <div class="text-center mt-2">
+          <a href="https://wa.me/593979438903?text=Hola%2C%20estoy%20interesado%20en%20el%20art%C3%ADculo%20Tulipán%20de%20Amor." target="_blank" class="btn btn-success">Contáctanos</a>
         </div>
       </div>
       <div class="col">
